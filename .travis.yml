@@ -53,7 +53,6 @@ branches:
 
 before_install:
     - echo "Existing directories in $HOME" && ls $HOME
-    - echo "/proc/sys/kernel/yama/ptrace_scope" && cat /proc/sys/kernel/yama/ptrace_scope
 
 install:
     - ./Testing/script/travis_build.sh
